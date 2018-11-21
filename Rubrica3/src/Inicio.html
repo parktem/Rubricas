@@ -17,6 +17,21 @@
 
 </head>
 
+<script languaje="Javascript">
+
+    function buscar() {
+        alert("Este botón no es funcional, intentelo más tarde");
+    }
+
+    function enviar() {
+        document.getElementById("email").value = "";
+        document.getElementById("password").value = "";
+        document.getElementById("password2").value = "";
+        document.getElementById("information").value = "";
+    }
+
+</script>
+
 <body>
 
 
@@ -55,10 +70,45 @@
 
                     <form class="form-inline ">
                         <input class="form-control" type="text" placeholder="Buscar Albúm">
-                        <button class="btn btn-light" type="submit">Buscar</button>
+                        <button class="btn btn-light" type="submit" onclick="buscar()">Buscar</button>
                     </form>
                 </div>
             </nav>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Introduce el correo electrónico">
+                    <small id="emailHelp" class="form-text text-muted">Este correo será protegido como información
+                        confidencial</small>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                </div>
+                <div class="form-group row">
+                    <label for="example-date-input" class="col-3 col-form-label">Date</label>
+                    <div class="col-9">
+                        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="password2" placeholder="Repite la contraseña">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="information" rows="3" placeholder="Información adicional..."></textarea>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">¿Aceptar <a href="#">términos y condiciones</a>?</label>
+                </div>
+                </br>
+                <button type="submit" class="btn btn-primary" onclick="enviar()">Enviar</button>
+
+            </form>
+
         </div>
     </div>
 
