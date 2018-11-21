@@ -77,40 +77,61 @@
         </div>
     </div>
 
+    </br></br></br></br>
+
     <div class="container">
         <div class="row">
-            <form>
-                <div class="form-group">
-                    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Introduce el correo electrónico">
-                    <small id="emailHelp" class="form-text text-muted">Este correo será protegido como información
-                        confidencial</small>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="password" placeholder="Contraseña">
-                </div>
-                <div class="form-group row">
-                    <label for="example-date-input" class="col-3 col-form-label">Date</label>
-                    <div class="col-9">
-                        <input class="form-control" type="date" value="2011-08-19" id="example-date-input">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <input type="password" class="form-control" id="password2" placeholder="Repite la contraseña">
-                </div>
-                <div class="form-group">
-                    <textarea class="form-control" id="information" rows="3" placeholder="Información adicional..."></textarea>
-                </div>
-                <div class="form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">¿Aceptar <a href="#">términos y condiciones</a>?</label>
-                </div>
-                </br>
-                <button type="submit" class="btn btn-primary" onclick="enviar()">Enviar</button>
 
-            </form>
+
+
+            <div class="col-xl-6 col-sm-12">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Introduce el correo electrónico">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Contraseña">
+                    </div>
+                    </br>
+                    <div align="center"><button type="submit" class="btn btn-primary">Iniciar sesión</button></div>
+
+                </form>
+            </div>
+
+            <div class="col-xl-6 col-sm-12">
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Introduce el correo electrónico">
+                        <small id="emailHelp" class="form-text text-muted">Este correo será protegido como información
+                            confidencial</small>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="password2" placeholder="Repite la contraseña">
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-12">
+                            <input class="form-control" type="date" id="example-date-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="information" rows="3" placeholder="Información adicional..."></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">¿Aceptar <a href="#">términos y condiciones</a>?</label>
+                    </div>
+                    </br>
+                    <div align="center"><button type="submit" class="btn btn-primary" onclick="enviar()">Registrar</button></div>
+
+                </form>
+            </div>
 
         </div>
     </div>
+
 
 
 </body>
